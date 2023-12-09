@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+
+          .txt-al{
+            text-align-last: center;
+          }
+
+          .p-b-s{
+            padding-block-start: 0.2em;
+          }
+        }
+      </style>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+      <script src="script.js" defer></script>
+</head>
+<body class="">
+    <div class="w-[400px] h-[400px] bg-blue-200 rounded-full mx-auto mt-8 flex justify-center items-center relative shadow-sm shadow-black/50 txt-al after:w-5 after:h-5 after:rounded-full after:bg-black after:z-20">
+        
+        <div class="absolute bg-purple-700 bottom-[50%] rounded-sm w-1 h-36 origin-bottom sec z-10"></div>
+        <div class="absolute bg-yellow-300 bottom-[50%] rounded-sm w-2 h-32 origin-bottom  min"></div>
+        <div class="absolute bg-black bottom-[50%] rounded-sm w-2 h-24 origin-bottom  hour"></div>
+
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[30deg]"><p class="transform rotate-[-30deg]">1</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[60deg]"><p class="transform rotate-[-60deg]">2</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[90deg]"><p class="transform rotate-[-90deg] text-3xl">3</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[120deg]" ><p class="transform rotate-[-120deg]">4</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[150deg]"><p class="transform rotate-[-150deg]">5</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[180deg]"><p class="transform rotate-[-180deg] text-3xl">6</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[210deg]"><p class="transform rotate-[-210deg]">7</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[240deg]"><p class="transform rotate-[-240deg]">8</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[270deg]"><p class="transform rotate-[-270deg] text-3xl">9</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[300deg]"><p class="transform rotate-[-300deg]">10</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[330deg]"><p class="transform rotate-[-330deg]">11</p></span>
+        <span class="absolute w-[400px] h-[400px] font-bold transform rotate-[0deg]"><p class="text-2xl">12</p></span>
+
+    </div>
+
+    <div class="flex justify-center items-center w-[50%] md:w-[20%] h-28 border-2 border-blue-200 mx-auto mt-8">
+      <div class="digital text-5xl"></div>
+    </div>
+
+</body>
+</html>
